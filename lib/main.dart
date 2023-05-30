@@ -26,6 +26,12 @@ void main() {
           foregroundColor: kDarkColorScheme.onPrimaryContainer,
         ),
       ),
+      snackBarTheme: const SnackBarThemeData().copyWith(
+        backgroundColor: kDarkColorScheme.primaryContainer,
+        contentTextStyle: TextStyle(
+          color: kDarkColorScheme.onPrimaryContainer,
+        ),
+      ),
     ),
     theme: ThemeData().copyWith(
       useMaterial3: true,
