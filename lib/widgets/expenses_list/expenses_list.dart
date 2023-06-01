@@ -19,23 +19,10 @@ class ExpensesList extends StatelessWidget {
             background: Container(
               color: Theme.of(context).colorScheme.error.withOpacity(0.50),
               margin: Theme.of(context).cardTheme.margin,
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(48, 16, 48, 16),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Icon(
-                      Icons.delete,
-                      size: 35,
-                      color: Theme.of(context).colorScheme.error,
-                    ),
-                    Icon(
-                      Icons.delete,
-                      size: 35,
-                      color: Theme.of(context).colorScheme.error,
-                    ),
-                  ],
-                ),
+              child: Icon(
+                Icons.delete,
+                size: 35,
+                color: Theme.of(context).colorScheme.error,
               ),
             ),
             onDismissed: (direction) {
